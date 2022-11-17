@@ -1,0 +1,19 @@
+﻿@model EFTestApp.Models.Person;
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<form asp-action="Add" asp-controller="Home">
+    <div class="foo">
+        <label asp-for=Name></label>
+        <input asp-for="Name" />
+    </div>
+    <div class="foo">
+        <label asp-for=Age></label>
+        <input asp-for="Age" />
+    </div>
+    
+    <button type="submit">Save</button>
+
+</form>
